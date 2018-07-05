@@ -1,0 +1,87 @@
+cache:
+  enable: true
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+rss:
+footer:
+  since: 2015
+  icon: heart
+  powered: true
+  custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.github.com"><b>GitHub Pages</b></a>
+canonical: true
+menu:
+  home: / || home
+  categories: /categories/ || th
+  tags: /tags/ || tags
+  archives: /archives/ || archive
+  about: /about/ || user
+menu_settings:
+  icons: true
+scheme: Gemini
+site_state: true
+social:
+  Telegram: https://t.me/orannnnnnge || telegram
+  E-Mail: mailto:shenxiaohu1996@gmail.com || envelope
+social_icons:
+  enable: true
+  icons_only: true
+avatar: /images/avatar.gif
+toc:
+  enable: true
+  number: true
+creative_commons: by-nc-sa
+sidebar:
+  position: left
+  offset: 12
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  updated_diff: true
+  categories: true
+post_copyright:
+  enable: true
+  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
+highlight_theme: normal
+cheers_enabled: true
+disqus:
+  enable: true
+  shortname: orannnnnnge
+google_analytics: UA-115939977-1
+google_site_verification: MNfl3cRADAspGOmauQ_vx3qtCa6kbGgoUxqhtGUiln0
+note:
+  style: simple
+  icons: true
+label: true
+tabs:
+  enable: true
+  transition:
+    tabs: true
+    labels: true
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+motion:
+  enable: true
+  async: true
+  transition:
+    post_block: fadeIn
+    post_header: slideDownIn
+    post_body: slideDownIn
+    coll_header: slideLeftIn
+    sidebar: slideUpIn
+fancybox: true
+fastclick: true
+lazyload: true
+pace: true
+pace_theme: pace-theme-minimal
+vendors:
+  _internal: lib
+css: css
+js: js
+images: images
+version: 6.0.6
