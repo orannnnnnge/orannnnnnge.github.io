@@ -1,2 +1,2 @@
-# orannnnnnge.github.io
-My personal page : https://orannnnnnge.github.io
+# kizunaai.ooo
+My personal page : https://kizunaai.ooo

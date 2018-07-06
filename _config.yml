@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 面朝大海 春暖花开
+title: 爱酱的橱柜
 subtitle:
 description:
 author: Stephensen
@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://orannnnnnge.github.io
+url: https://kizunaai.ooo
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,8 +26,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render: 
+  - CNAME
   - README.md
-  - Tizi.conf
+  - 🎀.conf
 
 # Writing
 new_post_name: :title.md # File name of new posts
