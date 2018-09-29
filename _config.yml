@@ -28,6 +28,7 @@ i18n_dir: :lang
 skip_render: 
   - CNAME
   - README.md
+  - ✈️.conf
   - 🍂.conf
 
 # Writing
