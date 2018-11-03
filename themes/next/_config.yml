@@ -8,7 +8,7 @@ favicon:
 rss:
 footer:
   since: 2015
-  icon: heart
+  icon: fa fa-gg
   powered: true
   custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.github.com"><b>GitHub Pages</b></a>
 canonical: true
