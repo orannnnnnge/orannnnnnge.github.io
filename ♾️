@@ -3,7 +3,7 @@
 [General]
 ipv6 = true
 loglevel = notify
-dns-server = 101.6.6.6
+dns-server = 182.254.242.15, 2001:4860:4860::8888
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 
 allow-wifi-access = true
@@ -28,12 +28,12 @@ hide-udp = true
 use-keyword-filter = false
 
 [Proxy]
-🇷🇺 = ss, khbv3.zhs.one, 17005, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
-🇭🇰 = ss, hktkj9.zhs.one, 17005, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
-🇺🇸 = ss, ussxhh.zhs.one, 17005, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
+🇭🇰 = ss, hkck6u.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
+🇺🇸 = ss, usbl6v.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
+🇷🇺 = ss, ruhd1h.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
 
 [Proxy Group]
-Proxy = select, 🇷🇺, 🇭🇰, 🇺🇸
+Proxy = select, 🇭🇰, 🇺🇸, 🇷🇺
 
 [Rule]
 RULE-SET,https://github.com/Hackl0us/SS-Rule-Snippet/raw/master/Rulesets/Basic/CN.list,DIRECT
