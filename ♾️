@@ -3,7 +3,7 @@
 [General]
 ipv6 = true
 loglevel = notify
-dns-server = 101.6.6.6, 2001:da8::666
+dns-server = 101.132.183.99, 193.112.15.186
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 
 allow-wifi-access = true
