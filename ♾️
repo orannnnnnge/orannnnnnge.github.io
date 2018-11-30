@@ -3,7 +3,7 @@
 [General]
 ipv6 = true
 loglevel = notify
-dns-server = 101.132.183.99, 193.112.15.186
+dns-server = 223.5.5.5, 119.29.29.29, 114.114.114.114
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 
 allow-wifi-access = true
@@ -34,12 +34,16 @@ use-keyword-filter = false
 
 [Proxy Group]
 Proxy = select, 🇭🇰, 🇺🇸, 🇷🇺
+Video = select, 🇭🇰, 🇺🇸, 🇷🇺
 
 [Rule]
-RULE-SET,https://github.com/Hackl0us/SS-Rule-Snippet/raw/master/Rulesets/Basic/CN.list,DIRECT
-RULE-SET,https://github.com/Hackl0us/SS-Rule-Snippet/raw/master/Rulesets/Basic/common-ad-keyword.list,REJECT-TINYGIF
-RULE-SET,https://github.com/Hackl0us/SS-Rule-Snippet/raw/master/Rulesets/Basic/foreign.list,Proxy
-RULE-SET,https://github.com/Hackl0us/SS-Rule-Snippet/raw/master/Rulesets/App/social/Telegram.list,Proxy
+RULE-SET,SYSTEM,DIRECT
+RULE-SET,https://github.com/scomper/surge-list/raw/master/adblock.list,REJECT-TINYGIF
+RULE-SET,https://github.com/scomper/surge-list/raw/master/reject.list,REJECT-TINYGIF
+RULE-SET,https://github.com/scomper/surge-list/raw/master/cn.list,DIRECT
+RULE-SET,https://github.com/scomper/surge-list/raw/master/video.list,Video
+RULE-SET,https://github.com/scomper/surge-list/raw/master/blocked.list,Proxy
+RULE-SET,https://github.com/scomper/surge-list/raw/master/telegram.list,Proxy
 RULE-SET,LAN,DIRECT
 GEOIP,CN,DIRECT
 FINAL,Proxy,dns-failed
@@ -47,3 +51,10 @@ FINAL,Proxy,dns-failed
 [Host]
 *.inimc.com = 120.52.19.113
 *.pcbeta.com = 120.52.19.113
+
+[URL Rewrite]
+^http://www\.google\.cn http://www.google.com.hk header
+
+[Header Rewrite]
+^http://www\.biquge\.com\.tw header-del Cookie
+^https?://www\.zhihu\.com header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15
