@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/orannnnnnge/orannnnnnge.github.io/source/%E2%99%BE%EF%B8%8F interval=86400 strict=true
+#!MANAGED-CONFIG https://raw.githubusercontent.com/orannnnnnge/orannnnnnge.github.io/source/miaomiao interval=86400 strict=true
 
 [General]
 ipv6 = true
@@ -34,7 +34,7 @@ use-keyword-filter = false
 
 [Proxy Group]
 Proxy = select, 🇭🇰, 🇺🇸, 🇷🇺
-Video = select, 🇭🇰, 🇺🇸, 🇷🇺
+Video = select, 🇺🇸, 🇷🇺
 
 [Rule]
 RULE-SET,SYSTEM,DIRECT
@@ -51,10 +51,3 @@ FINAL,Proxy,dns-failed
 [Host]
 *.inimc.com = 120.52.19.113
 *.pcbeta.com = 120.52.19.113
-
-[URL Rewrite]
-^http://www\.google\.cn http://www.google.com.hk header
-
-[Header Rewrite]
-^http://www\.biquge\.com\.tw header-del Cookie
-^https?://www\.zhihu\.com header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15
