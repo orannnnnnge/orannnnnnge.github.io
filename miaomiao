@@ -3,7 +3,7 @@
 [General]
 ipv6 = true
 loglevel = notify
-dns-server = 223.5.5.5, 119.29.29.29, 114.114.114.114
+dns-server = 101.6.6.6, 2001:da8::666
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 
 allow-wifi-access = true
@@ -28,26 +28,21 @@ hide-udp = true
 use-keyword-filter = false
 
 [Proxy]
-🇭🇰 = ss, hkck6u.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
+🇭🇰 = ss, hgcdf6.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
 🇺🇸 = ss, usbl6v.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
 🇷🇺 = ss, ruhd1h.zhs.one, 16017, encrypt-method=chacha20-ietf-poly1305, password=00112233, udp-relay=true, tfo=true
 
 [Proxy Group]
 Proxy = select, 🇭🇰, 🇺🇸, 🇷🇺
-Video = select, 🇺🇸, 🇷🇺
 
 [Rule]
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,https://github.com/scomper/surge-list/raw/master/adblock.list,REJECT-TINYGIF
 RULE-SET,https://github.com/scomper/surge-list/raw/master/reject.list,REJECT-TINYGIF
 RULE-SET,https://github.com/scomper/surge-list/raw/master/cn.list,DIRECT
-RULE-SET,https://github.com/scomper/surge-list/raw/master/video.list,Video
+RULE-SET,https://github.com/scomper/surge-list/raw/master/video.list,Proxy
 RULE-SET,https://github.com/scomper/surge-list/raw/master/blocked.list,Proxy
 RULE-SET,https://github.com/scomper/surge-list/raw/master/telegram.list,Proxy
 RULE-SET,LAN,DIRECT
 GEOIP,CN,DIRECT
 FINAL,Proxy,dns-failed
-
-[Host]
-*.inimc.com = 120.52.19.113
-*.pcbeta.com = 120.52.19.113
