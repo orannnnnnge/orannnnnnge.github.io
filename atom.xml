@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>爱酱的橱柜</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://kizunaai.ooo/"/>
+  <updated>2019-10-08T14:07:49.960Z</updated>
+  <id>https://kizunaai.ooo/</id>
+  
+  <author>
+    <name>一颗韭菜</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[object Object]</title>
+    <link href="https://kizunaai.ooo/2019/10/08/1/"/>
+    <id>https://kizunaai.ooo/2019/10/08/1/</id>
+    <published>2019-10-08T14:07:49.960Z</published>
+    <updated>2019-10-08T14:07:49.960Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;test&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
